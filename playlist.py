@@ -59,3 +59,6 @@ def excluir_musica(id):
    
    musicas = [m for m in musicas if m['id'] != id]
    return jsonify({"mensage": "Musica excluida com sucesso."})
+
+if __name__ == "__main__":
+    app.rum(debug=True)
